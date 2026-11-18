@@ -12,7 +12,8 @@ html {
     backdrop-filter 0.35s ease;
 }
 [data-mmenu]:has(button[aria-expanded='true']) {
-  background: radial-gradient(70% 40% at 85% 0%, rgba(var(--acc-rgb), 0.1), transparent 70%), rgba(10, 11, 12, 0.94) !important;
+  background:
+    radial-gradient(70% 40% at 85% 0%, rgba(var(--acc-rgb), 0.1), transparent 70%), rgba(10, 11, 12, 0.94) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
 }
@@ -370,6 +371,251 @@ html.js [data-reveal]:not([data-in]) {
   to {
     opacity: 1;
     transform: none;
+  }
+}
+/* Hero visual panels (components/blocks/HeroVisual.tsx): animations and responsive layout. */
+@keyframes cxScanY {
+  0% {
+    top: -44px;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes cxGrowX {
+  from {
+    transform: scaleX(0);
+  }
+}
+@keyframes cxGrowY {
+  from {
+    transform: scaleY(0);
+  }
+}
+@keyframes cxDash {
+  from {
+    stroke-dashoffset: 100;
+  }
+}
+@keyframes cxType {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes cxCaret {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes cxTravel {
+  0% {
+    left: 14px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: calc(100% - 14px);
+    opacity: 0;
+  }
+}
+@keyframes cxFlowY {
+  from {
+    background-position:
+      0 -60px,
+      0 0;
+  }
+  to {
+    background-position:
+      0 0,
+      0 0;
+  }
+}
+@keyframes cxLoopIn {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  5% {
+    opacity: 1;
+    transform: none;
+  }
+  86% {
+    opacity: 1;
+    transform: none;
+  }
+  93%,
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
+@keyframes cxProg {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes cxEng {
+  0%,
+  26%,
+  100% {
+    border-color: rgba(var(--ink-rgb), 0.1);
+    background-color: rgba(var(--ink-rgb), 0.035);
+  }
+  4%,
+  22% {
+    border-color: rgba(var(--acc-rgb), 0.75);
+    background-color: rgba(var(--acc-rgb), 0.14);
+  }
+}
+@keyframes cxEvt {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  4% {
+    opacity: 1;
+    transform: none;
+  }
+  21% {
+    opacity: 1;
+    transform: none;
+  }
+  25%,
+  100% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+@keyframes cxTab {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  25%,
+  45% {
+    transform: translateY(38px);
+  }
+  50%,
+  70% {
+    transform: translateY(76px);
+  }
+  75%,
+  95% {
+    transform: translateY(114px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes cxKey {
+  0%,
+  18%,
+  26%,
+  43%,
+  51%,
+  68%,
+  76%,
+  93%,
+  100% {
+    transform: none;
+    box-shadow: 0 2px 0 rgba(var(--ink-rgb), 0.25);
+  }
+  21%,
+  46%,
+  71%,
+  96% {
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(var(--ink-rgb), 0.25);
+  }
+}
+@keyframes cxStep {
+  0%,
+  22%,
+  100% {
+    border-color: rgba(var(--ink-rgb), 0.1);
+    background-color: rgba(var(--ink-rgb), 0.035);
+  }
+  3%,
+  18% {
+    border-color: rgba(var(--acc-rgb), 0.75);
+    background-color: rgba(var(--acc-rgb), 0.14);
+  }
+}
+@keyframes cxTravelC {
+  0% {
+    left: 10%;
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}
+@keyframes cxSeg {
+  from {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes cxSoft {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@media (min-width: 1100px) {
+  [data-herogrid='hv'] {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) !important;
+    align-items: start !important;
+  }
+}
+@media (max-width: 899px) {
+  [data-hv] {
+    justify-self: stretch !important;
+    max-width: none !important;
+  }
+}
+@media (max-width: 560px) {
+  [data-hv] {
+    padding: 16px !important;
+    border-radius: 20px !important;
+  }
+  [data-g5] {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+  [data-stackm] {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+  }
+  [data-stackm] > *:last-child {
+    width: 100%;
   }
 }
 @media (prefers-reduced-motion: reduce) {

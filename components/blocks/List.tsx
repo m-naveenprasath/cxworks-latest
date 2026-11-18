@@ -20,12 +20,13 @@ export function List({ b }: BlockProps<ListBlock>) {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
           gap: 'clamp(24px,4vw,64px)',
+          alignItems: 'start',
         }}
       >
         <div>
-          <SectionHead eb={b.eb} h={b.h} p={b.p} />
+          <SectionHead eb={b.eb} h={b.h} p={b.p} flush />
         </div>
-        <div style={{ gridColumn: '1 / -1', borderTop: '1px solid rgba(var(--ink-rgb),.12)' }}>
+        <div style={{ borderTop: '1px solid rgba(var(--ink-rgb),.12)' }}>
           {b.items.map((t, i) => (
             <div
               key={i}
@@ -34,7 +35,7 @@ export function List({ b }: BlockProps<ListBlock>) {
                 display: 'grid',
                 gridTemplateColumns: '44px minmax(0,1fr)',
                 gap: '12px',
-                padding: '20px 0',
+                padding: '16px 0',
                 borderBottom: '1px solid rgba(var(--ink-rgb),.12)',
                 fontSize: 'clamp(17px,1.4vw,19px)',
                 lineHeight: '1.45',

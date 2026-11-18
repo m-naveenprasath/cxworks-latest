@@ -44,7 +44,7 @@ export function Reviews({ b }: BlockProps<object>) {
     <section
       data-reviews=""
       data-screen-label={b.label}
-      style={{ padding: 'clamp(72px,9vw,128px) clamp(20px,5vw,64px) 0', maxWidth: '1440px', margin: '0 auto' }}
+      style={{ padding: 'clamp(44px,5vw,76px) clamp(20px,5vw,64px) 0', maxWidth: '1440px', margin: '0 auto' }}
     >
       <div
         style={{

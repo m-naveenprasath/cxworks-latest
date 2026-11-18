@@ -226,16 +226,20 @@ export function SiteHeader() {
             {dropdown('build', 'Build', NAV.build)}
             {dropdown('run', 'Run', NAV.run)}
             {link('/nine-gates/', 'Nine Gates', 'nine-gates')}
-            {link('/insights/', 'Insights', 'insights')}
-            {link('/about/', 'Contact us', 'about')}
             <A
               className="hv-7891572"
               href={SITE.productsUrl}
+              target="_blank"
               onMouseEnter={() => setOpen(null)}
               style={{ ...navItem, background: 'transparent', color: 'var(--ink3)' }}
             >
-              Products
+              Products{' '}
+              <span aria-hidden="true" style={{ fontSize: '13px' }}>
+                ↗
+              </span>
             </A>
+            {link('/insights/', 'Insights', 'insights')}
+            {link('/about/', 'Contact us', 'about')}
           </nav>
           <A
             className="hv-c30ce7c"
@@ -323,9 +327,9 @@ const GROUPS: { t: string; items: NavLink[] }[] = [
   { t: 'Nine Gates', items: [{ l: 'The framework', href: '/nine-gates/' }, ...NAV.solutions] },
 ];
 const LINKS: (NavLink & { arr: string })[] = [
+  { l: 'Products', href: SITE.productsUrl, target: '_blank', arr: '↗' },
   { l: 'Insights', href: '/insights/', arr: '→' },
   { l: 'Contact us', href: '/about/', arr: '→' },
-  { l: 'Products', href: SITE.productsUrl, arr: '→' },
 ];
 
 function MobileMenu({ close }: { close: () => void }) {

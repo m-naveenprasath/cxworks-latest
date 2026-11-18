@@ -119,13 +119,14 @@ export function Footer() {
             <Links items={FOOTER.insights} />
           </div>
           <div style={col}>
-            <A className="hv-531886e" href={SITE.productsUrl} style={colHead}>
+            <A className="hv-531886e" href={SITE.productsUrl} target="_blank" style={colHead}>
               Products
             </A>
             <Links items={FOOTER.products} />
             <A
               className="hv-7760e51"
               href={SITE.productsUrl}
+              target="_blank"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -146,7 +147,7 @@ export function Footer() {
               }}
             >
               {'Visit Products '}
-              <span aria-hidden="true">→</span>
+              <span aria-hidden="true">↗</span>
             </A>
           </div>
           <div style={col}>
@@ -187,15 +188,13 @@ export function Footer() {
             </span>
           </span>
           <span style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 20px' }}>
-            {/* TODO: point these at real privacy/terms pages once they exist. */}
-            <A className="hv-3ffee7d" href="/" style={{ color: 'var(--muted2)', whiteSpace: 'nowrap' }}>
-              Privacy policy
-            </A>
-            <A className="hv-3ffee7d" href="/" style={{ color: 'var(--muted2)' }}>
-              Terms
-            </A>
-            <A className="hv-3ffee7d" href={SITE.productsUrl} style={{ color: 'var(--muted2)', whiteSpace: 'nowrap' }}>
-              Visit CXWorks Products →
+            <A
+              className="hv-3ffee7d"
+              href={SITE.productsUrl}
+              target="_blank"
+              style={{ color: 'var(--muted2)', whiteSpace: 'nowrap' }}
+            >
+              Visit CXWorks Products ↗
             </A>
             <A
               className="hv-3ffee7d"

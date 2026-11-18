@@ -13,7 +13,6 @@ export const SITE = {
   productsUrl: '/products/',
   phone: { label: '+1 (725) 325 5270', href: 'tel:+17253255270' },
   email: 'info@cxworks.com',
-  support: ['idris@cxworks.com', 'rithik@cxworks.com', 'sowmya@cxworks.com'],
   linkedin: 'https://www.linkedin.com/company/cxworks-official/',
   address: {
     streetAddress: '5755 North Point Pkwy',

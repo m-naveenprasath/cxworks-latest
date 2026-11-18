@@ -1,0 +1,920 @@
+{
+  "audit:dcx-diagnostic": {
+    "k": "gates",
+    "score": true,
+    "title": "DCX Audit · Nine Gate scorecard",
+    "gates": [
+      [
+        "Discoverability",
+        0,
+        68
+      ],
+      [
+        "Findability",
+        0,
+        42
+      ],
+      [
+        "Relevance",
+        0,
+        71
+      ],
+      [
+        "Clarity",
+        0,
+        63
+      ],
+      [
+        "Usability",
+        0,
+        77
+      ],
+      [
+        "Trust",
+        0,
+        81
+      ],
+      [
+        "Conversion",
+        0,
+        38
+      ],
+      [
+        "Assistance",
+        0,
+        55
+      ],
+      [
+        "Retention",
+        0,
+        49
+      ]
+    ],
+    "foot": "Lowest gates: Conversion and Findability. Your roadmap fixes these first."
+  },
+  "audit:seo-audit": {
+    "k": "scan",
+    "title": "SEO Audit · three pillars",
+    "rows": [
+      [
+        "On-page SEO",
+        "h",
+        "72 / 100"
+      ],
+      [
+        "Titles, meta and H1s",
+        "warn",
+        "96 missing"
+      ],
+      [
+        "Content vs search intent",
+        "ok",
+        "Good"
+      ],
+      [
+        "Technical SEO",
+        "h",
+        "58 / 100"
+      ],
+      [
+        "Indexed pages",
+        "warn",
+        "82%"
+      ],
+      [
+        "Duplicate content",
+        "fail",
+        "140 pages"
+      ],
+      [
+        "Off-page SEO",
+        "h",
+        "64 / 100"
+      ],
+      [
+        "Referring domains",
+        "ok",
+        "312"
+      ],
+      [
+        "Toxic backlinks",
+        "fail",
+        "48"
+      ]
+    ]
+  },
+  "audit:technical-seo-audit": {
+    "k": "gauge",
+    "title": "Technical SEO · site health",
+    "score": 62,
+    "scoreT": "of 100",
+    "rows": [
+      [
+        "Crawlability",
+        "fail",
+        "412 errors"
+      ],
+      [
+        "Indexation",
+        "warn",
+        "82% indexed"
+      ],
+      [
+        "Site speed (Core Web Vitals)",
+        "warn",
+        "LCP 3.4s"
+      ],
+      [
+        "Mobile usability",
+        "ok",
+        "Pass"
+      ],
+      [
+        "Structured data",
+        "warn",
+        "3 of 6 types"
+      ],
+      [
+        "Redirects and broken links",
+        "fail",
+        "96 chains"
+      ],
+      [
+        "XML sitemap and robots.txt",
+        "ok",
+        "Valid"
+      ],
+      [
+        "Canonicals and duplicates",
+        "warn",
+        "140 pages"
+      ]
+    ]
+  },
+  "audit:ai-visibility-audit": {
+    "k": "answer",
+    "title": "AI visibility · prompt test",
+    "q": "Best supplier for industrial safety gloves?",
+    "ans": "For bulk orders, Competitor A and Competitor B are the most recommended. Both list cut ratings, sizing and next-day delivery. Marketplace sellers are cheaper but vary in quality.",
+    "cites": [
+      [
+        "Competitor A",
+        0
+      ],
+      [
+        "Competitor B",
+        0
+      ],
+      [
+        "Marketplace",
+        0
+      ],
+      [
+        "You · not cited",
+        -1
+      ]
+    ],
+    "engines": [
+      [
+        "ChatGPT",
+        0
+      ],
+      [
+        "Claude",
+        0
+      ],
+      [
+        "Gemini",
+        1
+      ],
+      [
+        "Perplexity",
+        0
+      ]
+    ],
+    "foot": "Cited in 3 of 20 category prompts. Competitors: 14.",
+    "cta": {
+      "t": "AI is answering for you. CXWorks makes sure it names you.",
+      "l": "Get visible",
+      "href": "/services/ai-search-visibility/"
+    }
+  },
+  "audit:cro-ux-audit": {
+    "k": "path",
+    "title": "CRO Audit · session journey",
+    "stages": [
+      [
+        "Land",
+        "100%"
+      ],
+      [
+        "Browse",
+        "64%"
+      ],
+      [
+        "Product",
+        "41%"
+      ],
+      [
+        "Cart",
+        "12%",
+        1
+      ],
+      [
+        "Order",
+        "3.2%"
+      ]
+    ],
+    "note": "71% leave between product and cart. Shipping cost shows too late."
+  },
+  "audit:analytics-audit": {
+    "k": "stack",
+    "title": "Analytics Audit · your data stack",
+    "tools": [
+      [
+        "GA4",
+        "googleanalytics",
+        "#E37400",
+        "warn",
+        "24/31 events"
+      ],
+      [
+        "GSC",
+        "googlesearchconsole",
+        "#458CF5",
+        "ok",
+        "Linked"
+      ],
+      [
+        "GTM",
+        "googletagmanager",
+        "#246FDB",
+        "fail",
+        "12 dup tags"
+      ],
+      [
+        "Adobe",
+        "adobe",
+        "#FA0F00",
+        "warn",
+        "Gaps"
+      ],
+      [
+        "Quantum Metric",
+        "qm",
+        "",
+        "ok",
+        "Live"
+      ]
+    ],
+    "events": [
+      [
+        "page_view",
+        "48.2k",
+        100
+      ],
+      [
+        "view_item",
+        "21.6k",
+        45
+      ],
+      [
+        "add_to_cart",
+        "6.1k",
+        13
+      ],
+      [
+        "begin_checkout",
+        "2.4k",
+        5
+      ],
+      [
+        "purchase",
+        "1.3k",
+        3
+      ]
+    ],
+    "live": [
+      "page_view",
+      "view_item",
+      "add_to_cart",
+      "purchase"
+    ],
+    "rows": [
+      [
+        "Revenue matches backend",
+        "warn",
+        "88%"
+      ],
+      [
+        "UTM hygiene",
+        "fail",
+        "38% untagged"
+      ],
+      [
+        "Consent mode v2",
+        "fail",
+        "Missing"
+      ],
+      [
+        "Duplicate tags (GTM)",
+        "warn",
+        "12 found"
+      ],
+      [
+        "Cross-domain tracking",
+        "ok",
+        "Pass"
+      ]
+    ]
+  },
+  "audit:accessibility-audit": {
+    "k": "a11y",
+    "title": "Accessibility · WCAG 2.2 AA test",
+    "rows": [
+      [
+        "Fix list by template",
+        "h",
+        "Severity · issues"
+      ],
+      [
+        "Checkout form",
+        "fail",
+        "Critical · 6"
+      ],
+      [
+        "Product page",
+        "warn",
+        "Serious · 14"
+      ],
+      [
+        "Search and filters",
+        "warn",
+        "Serious · 9"
+      ],
+      [
+        "Navigation menu",
+        "ok",
+        "Minor · 3"
+      ]
+    ],
+    "foot": "Fix a template once and every page using it is fixed. Retest included."
+  },
+  "audit:catalog-search-audit": {
+    "k": "merch",
+    "title": "Merchandising audit · what we check",
+    "q": "m8 hex bolt zinc",
+    "before": "0 results",
+    "after": "14 results after fix",
+    "areas": [
+      [
+        "On-site search",
+        "fail",
+        "1 in 6 searches return nothing",
+        "M11 4a7 7 0 1 0 0 14a7 7 0 1 0 0-14M16 16l5 5"
+      ],
+      [
+        "Pin and boost",
+        "warn",
+        "Best sellers not pinned on top categories",
+        "M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17.5 6.5 21 8 13.5 3 9l6.5-.5z"
+      ],
+      [
+        "Search A/B test",
+        "ok",
+        "Variant B: +12% search to cart",
+        "M4 20V10M10 20V4M16 20v-7M22 20H2"
+      ],
+      [
+        "Synonyms and typos",
+        "warn",
+        "“drillbit” finds nothing",
+        "M4 7h10M4 12h16M4 17h7M17 15l3 3-3 3"
+      ],
+      [
+        "Filters and facets",
+        "fail",
+        "38% of products missing filter values",
+        "M3 5h18M6 12h12M10 19h4"
+      ],
+      [
+        "Category sorting",
+        "warn",
+        "Out-of-stock items rank first",
+        "M7 4v16M3 16l4 4 4-4M17 20V4M13 8l4-4 4 4"
+      ]
+    ]
+  },
+  "svc:dcx-transformation": {
+    "k": "gates",
+    "title": "Nine Gate scores · before → after",
+    "gates": [
+      [
+        "Discoverability",
+        48,
+        74
+      ],
+      [
+        "Findability",
+        41,
+        70
+      ],
+      [
+        "Relevance",
+        55,
+        78
+      ],
+      [
+        "Clarity",
+        62,
+        81
+      ],
+      [
+        "Usability",
+        58,
+        83
+      ],
+      [
+        "Trust",
+        66,
+        85
+      ],
+      [
+        "Conversion",
+        39,
+        68
+      ],
+      [
+        "Assistance",
+        44,
+        72
+      ],
+      [
+        "Retention",
+        51,
+        76
+      ]
+    ]
+  },
+  "svc:conversion-rate-optimization": {
+    "k": "cro",
+    "title": "CRO · how every test runs",
+    "loop": [
+      [
+        "Research",
+        "Data, heatmaps, replays"
+      ],
+      [
+        "Hypothesis",
+        "What to change and why"
+      ],
+      [
+        "A/B test",
+        "Split real traffic"
+      ],
+      [
+        "Analyse",
+        "Wait for significance"
+      ],
+      [
+        "Roll out",
+        "Ship the winner"
+      ]
+    ],
+    "ab": {
+      "a": "2.4%",
+      "b": "2.8%",
+      "lift": "+18%",
+      "conf": 96
+    },
+    "methods": [
+      "Funnel analysis",
+      "Heatmaps",
+      "Session replay",
+      "User surveys",
+      "A/B and multivariate tests",
+      "Personalisation",
+      "Landing pages",
+      "Checkout UX"
+    ]
+  },
+  "svc:ai-search-visibility": {
+    "k": "answer",
+    "title": "GEO · AI answer citation",
+    "q": "Which brand makes the most durable work boots?",
+    "ans": "Your brand is the most cited for durability: steel toe, Goodyear welt and a 12-month sole guarantee. Competitor A is a lower-cost option.",
+    "cites": [
+      [
+        "You",
+        1
+      ],
+      [
+        "Competitor A",
+        0
+      ],
+      [
+        "Review site",
+        0
+      ]
+    ],
+    "engines": [
+      [
+        "ChatGPT",
+        1
+      ],
+      [
+        "Claude",
+        1
+      ],
+      [
+        "Gemini",
+        1
+      ],
+      [
+        "Perplexity",
+        1
+      ]
+    ]
+  },
+  "svc:digital-merchandising": {
+    "k": "merch",
+    "title": "Merchandising · what we build",
+    "testL": "Search, after tuning",
+    "areasL": "Six things we set up and run",
+    "q": "cordless drill 18v",
+    "before": "Accessories ranked first",
+    "after": "Best-selling drills first",
+    "areas": [
+      [
+        "Search tuning",
+        "fix",
+        "Relevance rules and zero-result fixes",
+        "M11 4a7 7 0 1 0 0 14a7 7 0 1 0 0-14M16 16l5 5",
+        "+31% search to cart"
+      ],
+      [
+        "Pin and boost",
+        "fix",
+        "Best sellers and margin pinned per category",
+        "M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17.5 6.5 21 8 13.5 3 9l6.5-.5z",
+        "Live on 40 categories"
+      ],
+      [
+        "Search A/B testing",
+        "fix",
+        "Every ranking change tested on real traffic",
+        "M4 20V10M10 20V4M16 20v-7M22 20H2",
+        "+12% revenue per search"
+      ],
+      [
+        "Synonyms and typos",
+        "fix",
+        "Trade terms, plurals and misspellings mapped",
+        "M4 7h10M4 12h16M4 17h7M17 15l3 3-3 3",
+        "1,200 synonyms"
+      ],
+      [
+        "Filters and facets",
+        "fix",
+        "Clean attributes behind every filter",
+        "M3 5h18M6 12h12M10 19h4",
+        "94% filter coverage"
+      ],
+      [
+        "Sorting rules",
+        "fix",
+        "Stock, margin and demand weighted",
+        "M7 4v16M3 16l4 4 4-4M17 20V4M13 8l4-4 4 4",
+        "Out of stock sinks"
+      ]
+    ]
+  },
+  "svc:catalog-management": {
+    "k": "merch",
+    "title": "Catalog · what we manage",
+    "flowL": "From supplier file to live product",
+    "flow": [
+      "Supplier data",
+      "Clean and enrich",
+      "Map taxonomy",
+      "PIM / CMS",
+      "Site and feeds"
+    ],
+    "areasL": "Everything in your catalog",
+    "areas": [
+      [
+        "Product data and content",
+        "fix",
+        "Titles, descriptions and specs written for search",
+        "M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6",
+        "Enriched"
+      ],
+      [
+        "PIM and CMS upload",
+        "fix",
+        "Bulk uploads to Akeneo, Salsify, Shopify, Magento and more",
+        "M12 16V4M7 9l5-5 5 5M4 20h16",
+        "Bulk loaded"
+      ],
+      [
+        "Taxonomy mapping",
+        "fix",
+        "Every product in the right category tree",
+        "M12 3v5M5 13V9h14v4M3 13h4v4H3zM10 13h4v4h-4zM17 13h4v4h-4z",
+        "Mapped"
+      ],
+      [
+        "Attributes and specs",
+        "fix",
+        "Clean values behind every filter",
+        "M3 12V4h8l10 10-8 8zM7.5 7.5h.01",
+        "Normalised"
+      ],
+      [
+        "Images and media",
+        "fix",
+        "4+ images, alt text, size guides",
+        "M4 5h16v14H4zM4 15l5-5 4 4 3-3 4 4M15 9h.01",
+        "Complete"
+      ],
+      [
+        "Variants and bundles",
+        "fix",
+        "Sizes, colours and kits grouped right",
+        "M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z",
+        "Grouped"
+      ],
+      [
+        "Feeds and marketplaces",
+        "fix",
+        "Google Shopping, Amazon and partner feeds",
+        "M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16M5 19h.01",
+        "Synced"
+      ],
+      [
+        "Compliance documents",
+        "fix",
+        "Safety sheets and certificates attached",
+        "M12 3l8 3v6c0 5-3.5 8-8 9c-4.5-1-8-4-8-9V6zM9 12l2 2l4-4",
+        "Attached"
+      ]
+    ]
+  },
+  "svc:digital-analytics": {
+    "k": "stack",
+    "title": "Digital Analytics · what we set up",
+    "tools": [
+      [
+        "GA4",
+        "googleanalytics",
+        "#E37400",
+        "warn",
+        "24/31 events"
+      ],
+      [
+        "GSC",
+        "googlesearchconsole",
+        "#458CF5",
+        "ok",
+        "Linked"
+      ],
+      [
+        "GTM",
+        "googletagmanager",
+        "#246FDB",
+        "fail",
+        "12 dup tags"
+      ],
+      [
+        "Adobe",
+        "adobe",
+        "#FA0F00",
+        "warn",
+        "Gaps"
+      ],
+      [
+        "Quantum Metric",
+        "qm",
+        "",
+        "ok",
+        "Live"
+      ]
+    ],
+    "events": [
+      [
+        "page_view",
+        "52.4k",
+        100
+      ],
+      [
+        "view_item",
+        "24.9k",
+        48
+      ],
+      [
+        "add_to_cart",
+        "7.3k",
+        14
+      ],
+      [
+        "begin_checkout",
+        "3.1k",
+        6
+      ],
+      [
+        "purchase",
+        "1.9k",
+        4
+      ]
+    ],
+    "live": [
+      "view_item",
+      "add_to_cart",
+      "begin_checkout",
+      "purchase"
+    ],
+    "rows": [
+      [
+        "Tracking plan and GTM rebuild",
+        "fix",
+        "Done"
+      ],
+      [
+        "Revenue matches backend",
+        "fix",
+        "98%"
+      ],
+      [
+        "UTM governance",
+        "fix",
+        "In place"
+      ],
+      [
+        "Consent mode v2",
+        "fix",
+        "Live"
+      ],
+      [
+        "Dashboards for each team",
+        "fix",
+        "Weekly"
+      ]
+    ]
+  },
+  "svc:growth-marketing": {
+    "k": "channels",
+    "title": "Growth · every channel, one view",
+    "kpis": [
+      [
+        "Revenue",
+        "+38%"
+      ],
+      [
+        "Cost per customer",
+        "−24%"
+      ],
+      [
+        "Blended ROAS",
+        "4.1×"
+      ]
+    ],
+    "ch": [
+      [
+        "Organic search",
+        34,
+        "CVR 2.6%",
+        "#40C8E0"
+      ],
+      [
+        "Paid search (PPC)",
+        24,
+        "ROAS 4.1×",
+        "#0A84FF"
+      ],
+      [
+        "Social",
+        14,
+        "ROAS 2.2×",
+        "#6AD8EB"
+      ],
+      [
+        "Direct",
+        12,
+        "CVR 3.4%",
+        "#008299"
+      ],
+      [
+        "Email and CRM",
+        9,
+        "CVR 5.1%",
+        "#B0EBF5"
+      ],
+      [
+        "Referral and affiliates",
+        7,
+        "CVR 2.1%",
+        "#64A8FF"
+      ]
+    ]
+  },
+  "svc:ecommerce-website-development": {
+    "k": "wire",
+    "title": "Build · new storefront",
+    "chips": [
+      [
+        "Lighthouse",
+        "96"
+      ],
+      [
+        "LCP",
+        "1.6s"
+      ],
+      [
+        "Checkout",
+        "2 steps"
+      ]
+    ]
+  },
+  "sol:customer-experience-consulting": {
+    "k": "flow",
+    "title": "CX consulting · how it runs",
+    "steps": [
+      [
+        "Listen",
+        "Interviews, reviews, support tickets",
+        "Wk 1"
+      ],
+      [
+        "Map",
+        "Journey map across nine gates",
+        "Wk 2"
+      ],
+      [
+        "Prioritise",
+        "Impact × effort, owner per fix",
+        "Wk 3"
+      ],
+      [
+        "Ship and measure",
+        "Fixes live, tracked monthly",
+        "Wk 4+"
+      ]
+    ]
+  },
+  "sol:customer-journey-optimization": {
+    "k": "path",
+    "title": "Journey · discover to repeat",
+    "stages": [
+      [
+        "Discover",
+        "82"
+      ],
+      [
+        "Compare",
+        "61",
+        1
+      ],
+      [
+        "Decide",
+        "74"
+      ],
+      [
+        "Buy",
+        "79"
+      ],
+      [
+        "Return",
+        "58"
+      ]
+    ],
+    "note": "Compare is the weak step: specs are missing on 1 in 3 pages."
+  },
+  "sol:ecommerce-consulting": {
+    "k": "gauge",
+    "title": "Store health · growth plan",
+    "score": 64,
+    "scoreT": "store score",
+    "rows": [
+      [
+        "Conversion rate",
+        "warn",
+        "1.4%"
+      ],
+      [
+        "Average order value",
+        "ok",
+        "$186"
+      ],
+      [
+        "Repeat purchase rate",
+        "fail",
+        "12%"
+      ],
+      [
+        "Platform and apps",
+        "warn",
+        "31 apps"
+      ]
+    ]
+  }
+}

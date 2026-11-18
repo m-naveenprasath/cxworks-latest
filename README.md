@@ -27,6 +27,7 @@ content/                 ← all copy lives here (JSON); no code changes needed 
   pages/solutions/*.json /<slug>/               key "sol:<slug>"
   insights/NNN-*.json    one article each; NNN sets the listing order
   site/*.json            shared data: gates, services, audits, reviews, charts, partners …
+  site/hero-visuals.json animated example panel beside the hero, keyed by page key
 
 app/                     routes
   page.tsx               home
@@ -144,6 +145,8 @@ add it to `registry.ts`, then use `{ "type": "myblock", … }` in a page.
   so keep those property names when restyling.
 - 37 insights are marked `"draft": true` in their JSON. They were public on the old site and still are.
   Add `"noindex": true` (or delete the file) to hide one.
-- Footer "Privacy policy" and "Terms" link to `/` until those pages exist.
+- The design reference is `CXWorks Site Finalized Version (RD) (2).html` (a self-unpacking bundle). The main site
+  follows it; the `/products/` section is separate and keeps its own design. Links to Products open in a new tab (↗),
+  as in the reference.
 - Deploy on Vercel (zero config) or any Node host (`npm run build && npm start`). Redirects need a
   Node/edge server, so this is not a pure static export.

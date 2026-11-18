@@ -4,6 +4,7 @@ import type { Cta } from '@/lib/types';
 import { A } from '@/components/ui/A';
 import { ui } from '@/components/ui/styles';
 import { HeroGates } from './HeroGates';
+import { HeroVisual, heroVisual } from './HeroVisual';
 import type { BlockProps } from './types';
 
 export interface HeroBlock {
@@ -26,6 +27,8 @@ export function Hero({ b, page }: BlockProps<HeroBlock>) {
   const btn1 = ctaLink(b.ctas?.[0] ?? b.btn);
   const btn2 = ctaLink(b.ctas?.[1]);
   const crumb = page.crumb ?? [];
+  // Animated example panel beside the hero (audits, services, solutions); see content/site/hero-visuals.json.
+  const hv = b.home ? null : heroVisual(page.key);
   return (
     <section
       data-screen-label={b.label}
@@ -37,12 +40,12 @@ export function Hero({ b, page }: BlockProps<HeroBlock>) {
       }}
     >
       {/* Keeps the same top spacing on pages without breadcrumbs (e.g. home). */}
-      {crumb.length === 0 && <div aria-hidden="true" style={{ height: '28px' }} />}
+      {crumb.length === 0 && <div aria-hidden="true" style={{ height: '20px' }} />}
       {crumb.length > 0 && (
         <nav
           aria-label="Breadcrumb"
           style={{
-            margin: '0 0 28px',
+            margin: '0 0 20px',
             display: 'flex',
             flexWrap: 'wrap',
             gap: '6px',
@@ -74,7 +77,7 @@ export function Hero({ b, page }: BlockProps<HeroBlock>) {
         </nav>
       )}
       <div
-        data-herogrid={b.home ? 'home' : 'page'}
+        data-herogrid={b.home ? 'home' : hv ? 'hv' : 'page'}
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))',
@@ -201,6 +204,7 @@ export function Hero({ b, page }: BlockProps<HeroBlock>) {
           )}
         </div>
         {b.home && <HeroGates />}
+        {hv && <HeroVisual v={hv} />}
       </div>
     </section>
   );

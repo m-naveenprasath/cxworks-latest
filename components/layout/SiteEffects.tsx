@@ -22,7 +22,7 @@ export function SiteEffects() {
       const max = se.scrollHeight - window.innerHeight;
       if (bar.current) bar.current.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
       if (top.current) {
-        const on = y > window.innerHeight * 0.8 && window.innerWidth >= 760;
+        const on = y > window.innerHeight * 0.8;
         top.current.style.opacity = on ? '1' : '0';
         top.current.style.pointerEvents = on ? 'auto' : 'none';
       }

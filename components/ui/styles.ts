@@ -7,7 +7,7 @@ import type { CSSProperties } from 'react';
 
 export const ui = {
   section: {
-    padding: 'clamp(72px,9vw,128px) clamp(20px,5vw,64px) 0',
+    padding: 'clamp(44px,5vw,76px) clamp(20px,5vw,64px) 0',
     maxWidth: '1440px',
     margin: '0 auto',
     position: 'relative',
@@ -35,6 +35,17 @@ export const ui = {
     letterSpacing: '-0.04em',
     lineHeight: '1.05',
     maxWidth: '22ch',
+    textWrap: 'balance',
+  },
+  /** Smaller H2 for two-column sections (Problem, FAQ). */
+  h2Compact: {
+    margin: '0',
+    fontFamily: "'Montserrat',sans-serif",
+    fontWeight: '500',
+    fontSize: 'clamp(30px,3.6vw,50px)',
+    letterSpacing: '-0.04em',
+    lineHeight: '1.05',
+    maxWidth: '16ch',
     textWrap: 'balance',
   },
   h3: {

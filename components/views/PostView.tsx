@@ -449,7 +449,7 @@ export function PostView({ post, isoDate }: { post: Post; isoDate?: string }) {
       </article>
       <section
         data-screen-label="Article · Related"
-        style={{ padding: 'clamp(72px,10vw,140px) clamp(20px,5vw,64px) 0', maxWidth: '1440px', margin: '0 auto' }}
+        style={{ padding: 'clamp(48px,6vw,88px) clamp(20px,5vw,64px) 0', maxWidth: '1440px', margin: '0 auto' }}
       >
         <p
           data-reveal=""

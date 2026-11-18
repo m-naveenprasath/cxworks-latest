@@ -28,8 +28,8 @@ export const FOOTER = {
     { l: 'Free AI scan', href: '/free-ai-scan/' },
   ] as NavLink[],
   products: [
-    { l: 'NUARK', href: SITE.productsUrl + 'nuark/' },
-    { l: 'Query Prism', href: SITE.productsUrl + 'query-prism/' },
+    { l: 'NUARK ↗', href: SITE.productsUrl + 'nuark/', target: '_blank' },
+    { l: 'Query Prism ↗', href: SITE.productsUrl + 'query-prism/', target: '_blank' },
   ] as NavLink[],
   company: [
     { l: 'About CXWorks', href: '/about/' },
@@ -39,7 +39,6 @@ export const FOOTER = {
   contact: [
     { l: SITE.phone.label, href: SITE.phone.href },
     { l: SITE.email, href: 'mailto:' + SITE.email },
-    ...SITE.support.map((e) => ({ l: e, href: 'mailto:' + e })),
   ] as NavLink[],
 };
 

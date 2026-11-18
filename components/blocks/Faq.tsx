@@ -27,7 +27,7 @@ export function Faq({ b }: BlockProps<FaqBlock>) {
         }}
       >
         <div>
-          <SectionHead eb={b.eb} h={b.h} p={b.p} />
+          <SectionHead eb={b.eb} h={b.h} p={b.p} compact />
         </div>
         <div style={{ borderTop: '1px solid rgba(var(--ink-rgb),.12)', gridColumn: '1 / -1' }}>
           {b.items.map(([q, a], i) => {
