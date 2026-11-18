@@ -1,0 +1,66 @@
+/* Hover / focus states from the design (generated: one class per state, applied via className). */
+.ph-focus-0fad48:focus {
+  box-shadow: 0 0 0 3px rgba(100, 168, 255, 0.22) !important;
+}
+.ph-focus-76ee2b:focus {
+  box-shadow: 0 0 0 3px rgba(64, 200, 224, 0.22) !important;
+}
+.ph-hover-07aed6:hover {
+  color: #64a8ff !important;
+}
+.ph-hover-0882f3:hover {
+  transform: translateY(-1px) !important;
+}
+.ph-hover-17766b:hover {
+  border-color: rgba(100, 168, 255, 0.4) !important;
+}
+.ph-hover-1c0f8a:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 14px 34px -12px rgba(64, 200, 224, 0.7) !important;
+}
+.ph-hover-205650:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 14px 34px -12px rgba(100, 168, 255, 0.7) !important;
+}
+.ph-hover-2a3816:hover {
+  color: #f5f5f7 !important;
+}
+.ph-hover-2e3bab:hover {
+  background: rgba(245, 245, 247, 0.06) !important;
+}
+.ph-hover-33d3dc:hover {
+  background: rgba(245, 245, 247, 0.02) !important;
+}
+.ph-hover-4a2225:hover {
+  background: rgba(100, 168, 255, 0.1) !important;
+  border-color: rgba(100, 168, 255, 0.5) !important;
+}
+.ph-hover-4c7156:hover {
+  color: #f5f5f7 !important;
+  background: rgba(245, 245, 247, 0.04) !important;
+}
+.ph-hover-51d928:hover {
+  background: rgba(100, 168, 255, 0.12) !important;
+  border-color: rgba(100, 168, 255, 0.5) !important;
+}
+.ph-hover-598864:hover {
+  background: rgba(245, 245, 247, 0.05) !important;
+}
+.ph-hover-868718:hover {
+  color: #40c8e0 !important;
+}
+.ph-hover-a67671:hover {
+  background: rgba(64, 200, 224, 0.12) !important;
+  border-color: rgba(64, 200, 224, 0.5) !important;
+}
+.ph-hover-bf7004:hover {
+  color: #f5f5f7 !important;
+  background: rgba(245, 245, 247, 0.05) !important;
+}
+.ph-hover-dffb5f:hover {
+  background: rgba(245, 245, 247, 0.03) !important;
+}
+.ph-hover-ff3807:hover {
+  color: #000000 !important;
+  background: #40c8e0 !important;
+}
